@@ -22,7 +22,7 @@ const quotes = [
     const newQuoteCategory = document.getElementById('newQuoteCategory').value.trim();
   
     if (newQuoteText === "" || newQuoteCategory === "") {
-      alert("Both fields are required to add a quote.");
+      alert("Both fields are required to add a quote.")
       return;
     }
   
