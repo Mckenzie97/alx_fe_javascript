@@ -28,4 +28,15 @@ const quotes = [
     const quoteText = document.getElementById('quoteText').value;
     const quoteCategory = document.getElementById('quoteCategory').value;
   };
+  const pText = document.createElement('p');
+      pText.textContent = `"${text}"`;
+
+      const spanCategory = document.createElement('span');
+      spanCategory.style.fontStyle = 'italic';
+      spanCategory.textContent = `- ${category}`;
+
+    
+      quoteDisplay.appendChild(pText);
+      quoteDisplay.appendChild(spanCategory);
+    
   
