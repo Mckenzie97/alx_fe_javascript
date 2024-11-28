@@ -9,6 +9,16 @@
     <h1>Dynamic Quote Generator</h1>
     <div id="quoteDisplay"></div>
     <button id="newQuote">Show New Quote</button>
+    
+    <div class="form-container">
+      <input type="text" id="quoteText" placeholder="Enter quote text" />
+      <select id="quoteCategory">
+        <option value="Inspiration">Inspiration</option>
+        <option value="Motivation">Motivation</option>
+        <option value="Success">Success</option>
+      </select>
+      <button onclick="createAddQuoteForm()">Add Quote</button>
+    </div>
     <script src="script.js"></script>
   </body>
   </html>

@@ -8,19 +8,24 @@ const quotes = [
     const quoteDisplay = document.getElementById('quoteDisplay');
     
     if (quotes.length === 0) {
-      // Display message if no quotes are available
+      
       quoteDisplay.innerHTML = "<p>No quotes available.</p>";
       return;
     }
     
-    // Pick a random quote
+    
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const { text, category } = quotes[randomIndex];
   
-    // Update the DOM using innerHTML
+    
     quoteDisplay.innerHTML = `
       <p>"${text}"</p>
       <span style="font-style: italic;">- ${category}</span>
     `;
   }
+
+  function createAddQuoteForm() {
+    const quoteText = document.getElementById('quoteText').value;
+    const quoteCategory = document.getElementById('quoteCategory').value;
+  };
   
